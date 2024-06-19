@@ -115,8 +115,9 @@ h3 {
 }
 
 .contact-container {
-  padding: 50px;
+  padding: 150px;
   height: 100vh;
+  margin-top: 0px;
 }
 
 .contact-inside {
@@ -130,7 +131,7 @@ h3 {
 
 .contact-container > h1 {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 10px;
   margin-bottom: 50px;
 }
 
@@ -139,9 +140,9 @@ h3 {
 }
 
 .address > i {
-  padding: 15px;
+  padding: 15px 20px;
   border: 2px solid black;
-  border-radius: 9999px;
+  border-radius: 50%;
   box-shadow: 0px 0px 5px rgba(150, 8, 210, 0.5);
   font-size: 2em;
   text-align: center;
@@ -159,6 +160,7 @@ h3 {
 
 .address-inside > h1 {
   font-size: 1.5em;
+  padding-left: 10px;
 }
 .address-inside > h3 {
   font-size: 1em;
@@ -188,6 +190,7 @@ h3 {
 
 .phone-inside > h1 {
   font-size: 1.5em;
+  padding-left: 10px;
 }
 .phone-inside > h3 {
   font-size: 1em;
@@ -216,6 +219,7 @@ h3 {
 
 .email-inside > h1 {
   font-size: 1.5em;
+  padding-left: 10px;
 }
 .email-inside > h3 {
   font-size: 1em;
@@ -273,14 +277,15 @@ h3 {
   font-size: 2.5em;
 }
 
-.portfolio-container {
-  
+.portfolio-container{
+  height: 100vh;
+  margin-top: 0px;
 }
 
 .portfolio-inside {
   display: flex;
   justify-content: space-around;
-  padding: 150px;
+  padding: 50px 150px;
   width: 100%;
   height: 100%;
   flex-wrap: wrap;
@@ -288,5 +293,5 @@ h3 {
 
 .portfolio-container > h1 {
   text-align: center;
-  height: 10px;
+  margin-top: 10px;
 }
