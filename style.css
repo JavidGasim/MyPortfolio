@@ -297,115 +297,12 @@ h3 {
   margin-top: 10px;
 }
 
-@media only screen and (max-width: 600px) and (min-width: 413px) {
+/* Mobile-S 320px */
+@media only screen and (max-width: 320px) {
   .header-section {
     display: flex;
     flex-direction: column;
-    width: 600px;
-    height: 30vh;
-  }
-
-  .left-side {
-    display: flex;
-    justify-content: center;
-    margin-left: 0;
-  }
-
-  .right-side {
-    margin-right: 0;
-    justify-content: center;
-    margin-top: 10px;
-  }
-
-  .about-container {
-    padding: 50px;
-    margin-bottom: 50px;
-    margin-top: 0vh;
-  }
-
-  .inside-about {
-    padding: 10px;
-    height: 90vh;
-    margin-top: 25vh;
-  }
-
-  .about-right {
-    height: 250px;
-  }
-
-  .about-right > h1 {
-    margin-bottom: 10px;
-    font-size: 1.5em;
-  }
-
-  .about-right > p {
-    font-size: 1em;
-  }
-
-  .about-inside-left {
-    margin-left: 243px;
-    margin-top: -270px;
-  }
-
-  .about-inside-left > h3 {
-    font-size: 0.9em;
-    font-weight: normal;
-  }
-
-  .about-inside-left > h1 {
-    font-size: 1.2em;
-    font-weight: bolder;
-  }
-
-  .portfolio-container {
-    height: 100vh;
-    margin-top: 200px;
-    padding-top: 2px;
-  }
-
-  .portfolio-container > h1 {
-    text-align: center;
-    margin-top: 30vh;
-  }
-
-  .contact-container {
-    padding: 150px 20px;
-    height: 100vh;
-    margin-top: 250vh;
-  }
-
-  .contact-container > h1 {
-    margin-top: 70px;
-  }
-
-  .contact-inside {
-    display: flex;
-    flex-direction: column;
-    padding: 30px 0px;
-  }
-
-  .address {
-    margin-left: 100px;
-  }
-
-  .phone {
-    margin-left: 100px;
-  }
-
-  .email {
-    margin-left: 100px;
-  }
-
-  .footer-container {
-    margin-top: 50px;
-  }
-}
-
-@media only screen and (max-width: 412px) {
-  .header-section {
-    display: flex;
-    flex-direction: column;
-    width: 413px;
+    width: 100%;
     height: 20vh;
   }
 
@@ -413,12 +310,21 @@ h3 {
     display: flex;
     justify-content: center;
     margin-left: 0;
+    margin-top: 0;
+  }
+
+  .left-side > h1 {
+    font-size: 1.2em;
   }
 
   .right-side {
     margin-right: 0;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 0;
+  }
+
+  .right-side > a {
+    font-size: 0.7em;
   }
 
   .about-container {
@@ -429,7 +335,7 @@ h3 {
 
   .inside-about {
     padding: 15px 5px;
-    height: 63vh;
+    height: 60vh;
     margin-top: 20vh;
   }
 
@@ -439,29 +345,38 @@ h3 {
 
   .about-right > h1 {
     margin-bottom: 10px;
-    font-size: 1.2em;
+    font-size: 0.8em;
     font-weight: bolder;
   }
 
   .about-right > p {
-    font-size: 0.8em;
+    font-size: 0.5em;
   }
 
+  .card-body > h4 {
+    font-size: 0.8em !important;
+  }
+
+  .card-body > h4 > span {
+    font-size: 0.8em !important;
+  }
   .about-inside-left {
-    margin-left: 180px;
-    margin-top: -290px;
+    margin-left: 135px;
+    margin-top: -205px;
     font-weight: bolder;
+    padding: 0px;
   }
 
   .about-inside-left > h3 {
-    font-size: 0.9em;
+    font-size: 0.6em;
     font-weight: normal;
     margin-left: -10px;
+    margin-bottom: 0px;
   }
 
   .about-inside-left > h1 {
-    font-size: 1em;
-    font-weight: bolder;
+    font-size: 0.8em;
+    font-weight: bold;
   }
 
   .portfolio-container {
@@ -486,11 +401,11 @@ h3 {
     padding-top: 150px;
     padding-bottom: 50px;
     height: 80vh;
-    margin-top: 160vh;
+    margin-top: 250vh;
   }
 
   .contact-container > h1 {
-    margin-top: 70px;
+    margin-top: 40px;
   }
 
   .contact-inside {
@@ -503,16 +418,891 @@ h3 {
     margin-left: 40px;
   }
 
+  .address-inside {
+    margin-left: 0px;
+  }
+
+  .address-inside > h1 {
+    font-size: 1.2em;
+    padding-left: 10px;
+  }
+  .address-inside > h3 {
+    font-size: 0.8em;
+  }
+
   .phone {
     margin-left: 40px;
+  }
+
+  .phone-inside {
+    margin-left: 0px;
+  }
+
+  .phone-inside > h1 {
+    font-size: 1.2em;
+    padding-left: 10px;
+  }
+  .phone-inside > h3 {
+    font-size: 0.8em;
   }
 
   .email {
     margin-left: 40px;
   }
 
+  .email-inside {
+    margin-left: 0px;
+  }
+
+  .email-inside > h1 {
+    font-size: 1.2em;
+    padding-left: 10px;
+  }
+  .email-inside > h3 {
+    font-size: 0.7em;
+  }
+
   .footer-container {
-    margin-top: 50px;
-    height: 55vh;
+    margin-top: 35vh;
+    height: 40vh;
+  }
+
+  #scrollToUp {
+    bottom: 20px;
+    right: 20px;
+    z-index: 1001;
+  }
+}
+
+/* Mobile-M 375px */
+@media only screen and (max-width: 376px) and (min-width: 321px) {
+  .header-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20vh;
+  }
+
+  .left-side {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .left-side > h1 {
+    font-size: 1.2em;
+  }
+
+  .right-side {
+    margin-right: 0;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .right-side > a {
+    font-size: 0.7em;
+  }
+
+  .about-container {
+    padding: 20px;
+    margin-bottom: 0px;
+    height: 85vh;
+  }
+
+  .inside-about {
+    padding: 15px 5px;
+    height: 65vh;
+    margin-top: 20vh;
+  }
+
+  .about-right {
+    height: 250px;
+  }
+
+  .about-right > h1 {
+    margin-bottom: 10px;
+    font-size: 0.8em;
+    font-weight: bolder;
+  }
+
+  .about-right > p {
+    font-size: 0.6em;
+  }
+
+  .card-body > h4 {
+    font-size: 0.8em !important;
+  }
+
+  .card-body > h4 > span {
+    font-size: 0.8em !important;
+  }
+
+  .about-inside-left {
+    margin-left: 160px;
+    margin-top: -205px;
+    font-weight: bolder;
+    padding: 0px;
+  }
+
+  .about-inside-left > h3 {
+    font-size: 0.6em;
+    font-weight: normal;
+    margin-left: -10px;
+    margin-bottom: 0px;
+  }
+
+  .about-inside-left > h1 {
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+
+  .portfolio-container {
+    height: 100vh;
+    margin-top: 0px;
+    padding-top: 100px;
+  }
+
+  .portfolio-inside {
+    padding: 10px;
+    margin-top: 5vh;
+  }
+
+  .portfolio-container > h1 {
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 0px;
+  }
+
+  .contact-container {
+    padding: 150px 20px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    height: 80vh;
+    margin-top: 250vh;
+  }
+
+  .contact-container > h1 {
+    margin-top: 40px;
+  }
+
+  .contact-inside {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+  }
+
+  .address {
+    margin-left: 40px;
+  }
+
+  .address-inside {
+    margin-left: 0px;
+  }
+
+  .address-inside > h1 {
+    font-size: 1.2em;
+    padding-left: 10px;
+  }
+  .address-inside > h3 {
+    font-size: 0.8em;
+  }
+
+  .phone {
+    margin-left: 40px;
+  }
+
+  .phone-inside {
+    margin-left: 0px;
+  }
+
+  .phone-inside > h1 {
+    font-size: 1.2em;
+    padding-left: 10px;
+  }
+  .phone-inside > h3 {
+    font-size: 0.8em;
+  }
+
+  .email {
+    margin-left: 40px;
+  }
+
+  .email-inside {
+    margin-left: 0px;
+  }
+
+  .email-inside > h1 {
+    font-size: 1.2em;
+    padding-left: 10px;
+  }
+  .email-inside > h3 {
+    font-size: 0.7em;
+  }
+
+  .footer-container {
+    margin-top: 35vh;
+    height: 40vh;
+  }
+
+  #scrollToUp {
+    bottom: 20px;
+    right: 20px;
+    z-index: 1001;
+  }
+}
+
+/* Mobile-L 425px */
+@media only screen and (max-width: 426px) and (min-width: 377px) {
+  .header-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20vh;
+  }
+
+  .left-side {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .left-side > h1 {
+    font-size: 1.2em;
+  }
+
+  .right-side {
+    margin-right: 0;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .right-side > a {
+    font-size: 0.7em;
+  }
+
+  .about-container {
+    padding: 20px;
+    margin-bottom: 0px;
+    height: 85vh;
+  }
+
+  .inside-about {
+    padding: 15px 5px;
+    height: 65vh;
+    margin-top: 20vh;
+  }
+
+  .about-right {
+    height: 250px;
+  }
+
+  .about-right > h1 {
+    margin-bottom: 10px;
+    font-size: 0.8em;
+    font-weight: bolder;
+  }
+
+  .about-right > p {
+    font-size: 0.7em;
+  }
+
+  .card-body > h4 {
+    font-size: 0.8em !important;
+  }
+
+  .card-body > h4 > span {
+    font-size: 0.8em !important;
+  }
+
+  .about-inside-left {
+    margin-left: 185px;
+    margin-top: -190px;
+    font-weight: bolder;
+    padding: 0px;
+  }
+
+  .about-inside-left > h3 {
+    font-size: 0.6em;
+    font-weight: normal;
+    margin-left: -10px;
+    margin-bottom: 0px;
+  }
+
+  .about-inside-left > h1 {
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+
+  .portfolio-container {
+    height: 100vh;
+    margin-top: 0px;
+    padding-top: 100px;
+  }
+
+  .portfolio-inside {
+    padding: 10px;
+    margin-top: 5vh;
+  }
+
+  .portfolio-container > h1 {
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 0px;
+  }
+
+  .contact-container {
+    padding: 150px 20px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    height: 80vh;
+    margin-top: 280vh;
+  }
+
+  .contact-container > h1 {
+    margin-top: 40px;
+  }
+
+  .contact-inside {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+  }
+
+  .address {
+    margin-left: 40px;
+  }
+
+  .address-inside {
+    margin-left: 0px;
+  }
+
+  .address-inside > h1 {
+    font-size: 1.2em;
+    padding-left: 10px;
+  }
+  .address-inside > h3 {
+    font-size: 0.8em;
+  }
+
+  .phone {
+    margin-left: 40px;
+  }
+
+  .phone-inside {
+    margin-left: 0px;
+  }
+
+  .phone-inside > h1 {
+    font-size: 1.2em;
+    padding-left: 10px;
+  }
+  .phone-inside > h3 {
+    font-size: 0.8em;
+  }
+
+  .email {
+    margin-left: 40px;
+  }
+
+  .email-inside {
+    margin-left: 0px;
+  }
+
+  .email-inside > h1 {
+    font-size: 1.2em;
+    padding-left: 10px;
+  }
+  .email-inside > h3 {
+    font-size: 0.7em;
+  }
+
+  .footer-container {
+    margin-top: 35vh;
+    height: 40vh;
+  }
+
+  #scrollToUp {
+    bottom: 20px;
+    right: 20px;
+    z-index: 1001;
+  }
+}
+
+/* Tablet 768px */
+@media only screen and (max-width: 769px) and (min-width: 427px) {
+  .header-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20vh;
+  }
+
+  .left-side {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .left-side > h1 {
+    font-size: 1.2em;
+  }
+
+  .right-side {
+    margin-right: 0;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .right-side > a {
+    font-size: 0.7em;
+  }
+
+  .about-container {
+    padding: 150px;
+    height: 100vh;
+    margin-bottom: 100px;
+  }
+
+  .inside-about {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0px 0px 15px rgba(150, 8, 210, 0.5);
+  }
+
+  .about-inside-left > h1 {
+    font-size: 2em;
+    font-weight: bolder;
+  }
+
+  .about-inside-left > h3 {
+    font-size: 1.2em;
+    font-weight: normal;
+  }
+
+  .about-left {
+    width: 45%;
+  }
+
+  .about-inside-left {
+    width: 90%;
+  }
+
+  .about-right {
+    width: 45%;
+  }
+
+  .about-right > h1 {
+    margin-bottom: 30px;
+  }
+
+  .about-right > p {
+    font-size: 1.7em;
+  }
+
+  .about-right {
+    height: 250px;
+  }
+
+  .about-right > h1 {
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-weight: bolder;
+  }
+
+  .about-right > p {
+    font-size: 0.9em;
+  }
+
+  .card-body > h4 {
+    font-size: 0.8em !important;
+  }
+
+  .card-body > h4 > span {
+    font-size: 0.8em !important;
+  }
+
+  .about-inside-left > h3 {
+    font-size: 0.6em;
+    font-weight: normal;
+    margin-left: -10px;
+    margin-bottom: 0px;
+  }
+
+  .about-inside-left > h1 {
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+
+  .portfolio-container {
+    height: 100vh;
+    margin-top: 0px;
+    padding-top: 100px;
+  }
+
+  .portfolio-inside {
+    padding: 10px;
+    margin-top: 5vh;
+  }
+
+  .portfolio-container > h1 {
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 0px;
+  }
+
+  .contact-container {
+    padding: 150px 20px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    height: 80vh;
+    margin-top: 100vh;
+  }
+
+  .contact-container > h1 {
+    margin-top: 40px;
+  }
+
+  .contact-inside {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+  }
+
+  .address {
+    margin-left: 40px;
+  }
+
+  .address-inside {
+    margin-left: 0px;
+  }
+
+  .address-inside > h1 {
+    font-size: 1.2em;
+    padding-left: 10px;
+  }
+  .address-inside > h3 {
+    font-size: 0.8em;
+  }
+
+  .phone {
+    margin-left: 40px;
+  }
+
+  .phone-inside {
+    margin-left: 0px;
+  }
+
+  .phone-inside > h1 {
+    font-size: 1.2em;
+    padding-left: 10px;
+  }
+  .phone-inside > h3 {
+    font-size: 0.8em;
+  }
+
+  .email {
+    margin-left: 40px;
+  }
+
+  .email-inside {
+    margin-left: 0px;
+  }
+
+  .email-inside > h1 {
+    font-size: 1.2em;
+    padding-left: 10px;
+  }
+  .email-inside > h3 {
+    font-size: 0.7em;
+  }
+
+  .footer-container {
+    margin-top: 35vh;
+    height: 40vh;
+  }
+
+  #scrollToUp {
+    bottom: 20px;
+    right: 20px;
+    z-index: 1001;
+  }
+}
+
+/* Laptop 1024px */
+@media only screen and (max-width: 1025px) and (min-width: 770px) {
+  .header-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10vh;
+  }
+
+  .left-side {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .left-side > h1 {
+    font-size: 1.5em;
+  }
+
+  .right-side {
+    margin-right: 0;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .right-side > a {
+    font-size: 1em;
+  }
+
+  .about-container {
+    padding: 150px;
+    padding-bottom: 0px;
+    height: 100vh;
+    margin-bottom: 0px;
+  }
+
+  .inside-about {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0px 0px 15px rgba(150, 8, 210, 0.5);
+  }
+
+  .about-inside-left > h1 {
+    font-size: 2em;
+    font-weight: bolder;
+  }
+
+  .about-inside-left > h3 {
+    font-size: 1.2em;
+    font-weight: normal;
+  }
+
+  .about-left {
+    width: 45%;
+  }
+
+  .about-inside-left {
+    width: 90%;
+  }
+
+  .about-right {
+    width: 45%;
+  }
+
+  .about-right > h1 {
+    margin-bottom: 30px;
+  }
+
+  .about-right > p {
+    font-size: 1.7em;
+  }
+
+  .about-right {
+    height: 250px;
+  }
+
+  .about-right > h1 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bolder;
+  }
+
+  .about-right > p {
+    font-size: 1.1em;
+  }
+
+  .card-body > h4 {
+    font-size: 1em !important;
+  }
+
+  .card-body > h4 > span {
+    font-size: 1em !important;
+  }
+
+  .about-inside-left > h3 {
+    font-size: 0.9em;
+    font-weight: normal;
+    margin-left: -10px;
+    margin-bottom: 0px;
+  }
+
+  .about-inside-left > h1 {
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+
+  .portfolio-container {
+    height: 100vh;
+    margin-top: 0px;
+    padding-top: 10px;
+  }
+
+  .portfolio-inside {
+    padding: 10px;
+    margin-top: 5vh;
+  }
+
+  .portfolio-container > h1 {
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 0px;
+  }
+
+  .contact-container {
+    padding: 150px 20px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    height: 80vh;
+    margin-top: 50vh;
+  }
+
+  .contact-container > h1 {
+    margin-top: 40px;
+  }
+
+  .contact-inside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px 0px;
+    padding-right: 50px;
+  }
+
+  .address {
+    margin-left: 20px;
+  }
+
+  .address-inside {
+    margin-left: 0px;
+  }
+
+  .address-inside > h1 {
+    font-size: 1.2em;
+    padding-left: 10px;
+  }
+  .address-inside > h3 {
+    font-size: 0.8em;
+  }
+
+  .phone {
+    margin-left: 40px;
+  }
+
+  .phone-inside {
+    margin-left: 0px;
+  }
+
+  .phone-inside > h1 {
+    font-size: 1.2em;
+    padding-left: 10px;
+  }
+  .phone-inside > h3 {
+    font-size: 0.8em;
+  }
+
+  .email {
+    margin-left: 40px;
+  }
+
+  .email-inside {
+    margin-left: 0px;
+  }
+
+  .email-inside > h1 {
+    font-size: 1.2em;
+    padding-left: 10px;
+  }
+  .email-inside > h3 {
+    font-size: 0.7em;
+  }
+
+  .footer-container {
+    margin-top: 0;
+    height: 20vh;
+  }
+
+  #scrollToUp {
+    bottom: 20px;
+    right: 20px;
+    z-index: 1001;
+  }
+}
+
+/* Laptop-L 1440px */
+@media only screen and (max-width: 1441px) and (min-width: 1026px) {
+  .about-container {
+    padding-top: 80px;
+    margin-bottom: 0px;
+    height: 100vh;
+  }
+
+  .inside-about {
+    margin-top: 20vh;
+  }
+
+  .portfolio-container {
+    padding: 15px 5px;
+  }
+
+  .portfolio-container > h1 {
+    margin-top: 170px;
+  }
+
+  .contact-container {
+    margin-top: 30vh;
+  }
+
+  .contact-container > h1 {
+    margin-top: 120px;
+  }
+}
+
+/* 4K 2560px */
+@media only screen and (max-width: 2561px) and (min-width: 1442px) {
+  .about-container {
+    padding-top: 80px;
+    margin-bottom: 0px;
+    height: 80vh;
+  }
+
+  .inside-about {
+    margin-top: 20vh;
+  }
+
+  .portfolio-container {
+    padding: 15px 5px;
+  }
+
+  .portfolio-container > h1 {
+    margin-top: 19vh;
+  }
+
+  .contact-container {
+    margin-top: 30vh;
+    padding-bottom: 0px;
+    height: 80vh;
+  }
+
+  .contact-container > h1 {
+    margin-top: 10vh;
+  }
+
+  .footer-container {
+    margin-top: 0px;
   }
 }
