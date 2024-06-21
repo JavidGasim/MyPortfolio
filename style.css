@@ -277,9 +277,9 @@ h3 {
   font-size: 2.5em;
 }
 
-.portfolio-container{
+.portfolio-container {
   height: 100vh;
-  margin-top: 0px;
+  margin-top: 10px;
 }
 
 .portfolio-inside {
@@ -289,9 +289,114 @@ h3 {
   width: 100%;
   height: 100%;
   flex-wrap: wrap;
+  margin-top: 15px;
 }
 
 .portfolio-container > h1 {
   text-align: center;
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-section {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 30vh;
+  }
+
+  .left-side {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .right-side {
+    margin-right: 0;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .about-container {
+    padding: 50px;
+    margin-bottom: 50px;
+    margin-top: 0vh;
+  }
+
+  .inside-about {
+    padding: 10px;
+    height: 90vh;
+    margin-top: 25vh;
+  }
+
+  .about-right {
+    height: 250px;
+  }
+
+  .about-right > h1 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
+
+  .about-right > p {
+    font-size: 1em;
+  }
+
+  .about-inside-left {
+    margin-left: 243px;
+    margin-top: -270px;
+  }
+
+  .about-inside-left > h3 {
+    font-size: 0.9em;
+    font-weight: normal;
+  }
+
+  .about-inside-left > h1 {
+    font-size: 1.2em;
+    font-weight: bolder;
+  }
+
+  .portfolio-container {
+    height: 100vh;
+    margin-top: 200px;
+    padding-top: 2px;
+  }
+
+  .portfolio-container > h1 {
+    text-align: center;
+    margin-top: 30vh;
+  }
+
+  .contact-container {
+    padding: 150px 20px;
+    height: 100vh;
+    margin-top: 250vh;
+  }
+
+  .contact-container > h1 {
+    margin-top: 70px;
+  }
+
+  .contact-inside {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+  }
+
+  .address {
+    margin-left: 100px;
+  }
+
+  .phone {
+    margin-left: 100px;
+  }
+
+  .email {
+    margin-left: 100px;
+  }
+
+  .footer-container{
+    margin-top: 50px;
+  }
 }
