@@ -1275,7 +1275,7 @@ h3 {
 /* 4K 2560px */
 @media only screen and (max-width: 2561px) and (min-width: 1442px) {
   .about-container {
-    padding-top: 80px;
+    padding-top: 15px;
     margin-bottom: 0px;
     height: 80vh;
   }
@@ -1285,7 +1285,8 @@ h3 {
   }
 
   .portfolio-container {
-    padding: 15px 5px;
+    margin-top: 30px;
+    padding: 25px 5px;
   }
 
   .portfolio-container > h1 {
@@ -1293,7 +1294,7 @@ h3 {
   }
 
   .contact-container {
-    margin-top: 30vh;
+    margin-top: 10vh;
     padding-bottom: 0px;
     height: 80vh;
   }
@@ -1303,6 +1304,6 @@ h3 {
   }
 
   .footer-container {
-    margin-top: 0px;
+    margin-top: 20vh;
   }
 }
